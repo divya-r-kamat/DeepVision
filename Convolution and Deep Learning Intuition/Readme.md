@@ -132,8 +132,11 @@ Without Max-pooling, **99 times** 3x3 convolution needs to be performed on 199x1
 |		98		|	3X3	    |
 |		99		|	1X1	    |
 				
-### How are kernels initialized? </br>
-Kernels are initialized randomly, there are variety of methods including simple ones like zero initialization , random initialization and Gaussian. However, its always recommended to use some more advanced techniques like He initialization, Xavier initialization/Glorot initialization so that the weights in the network dont start too small or too large leading to vanishing or exploding of gradients.
+### How are kernels initialized? 
+
+Kernels or Filter or Feature Extractors are used to extract the features from an image and store the data in neurons.Initializing the Kernel's weights in the begining of a tranining process is a random choice. Kernel weights can be anywhere between 0 and 1 or -1 and 1 depending on the activation function chosen acorss the NN layers. There are variety of methods including simple ones like zero initialization , random initialization and Gaussian. If we assign 0 as initial weights,then neurons across all the layers learn the same features during the training process.
+
+However, its always recommended to use some more advanced techniques like He initialization, Xavier initialization/Glorot initialization so that the weights in the network dont start too small or too large leading to vanishing or exploding of gradients.
 
 Kernels can also be initialised from the weights of another network. This is popularly called transfer learning and is used successfully for better and faster convergence of many problems.
 
