@@ -12,7 +12,7 @@ Lets say you have been to a animal sanctuary and would like to capture the sound
 
 _Colored digital images are mostly represented using three channels RGB and kernels(Mostly 3*3) can be applied on the images to extract any particular information. Also, we should be aware that only colors don't represent the channels. There are other features like edges, texture and pattern, part of objects which contributes to  particular channel._
 
-Note on edges and gradients - <\br>
+Note on edges and gradients - </br>
 Basically both edges and gradients are same, edges are nothing but (black, white, black - i.e we see some contrast changing) and gradients are (white, light grey, grey, dark grey, black etc), if we look at the gradient from far its going to be a egde.
 
 ## Why should we (nearly) always use 3x3 kernels?
