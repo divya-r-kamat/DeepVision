@@ -144,7 +144,7 @@ Without Max-pooling, **99 times** 3x3 convolution needs to be performed on 199x1
 				
 ### How are kernels initialized? 
 
-Kernels or Filter or Feature Extractors are used to extract the features from an image and store the data in neurons.Initializing the Kernel's weights in the begining of a tranining process is a random choice. Kernel weights can be anywhere between 0 and 1 or -1 and 1 depending on the activation function chosen acorss the NN layers. There are variety of methods including simple ones like zero initialization , random initialization and Gaussian. If we assign 0 as initial weights,then neurons across all the layers learn the same features during the training process.
+Kernels or Filter or Feature Extractors are used to extract the features from an image and store the data in neurons.Initializing the Kernel's weights in the begining of a tranining process is a random choice. Kernel weights can be anywhere between 0 and 1 or -1 and 1 depending on the activation function chosen across the NN layers. There are variety of methods including simple ones like zero initialization , random initialization and Gaussian. If we assign zero as initial weights,then neurons across all the layers tend to get stuck during the training process and if the neurons start with the same weights, then all the neurons will follow the same gradient, and will always end up doing the same thing as one another.
 
 However, its always recommended to use some more advanced techniques like He initialization, Xavier initialization/Glorot initialization so that the weights in the network dont start too small or too large leading to vanishing or exploding of gradients.
 
