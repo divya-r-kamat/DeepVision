@@ -30,6 +30,12 @@ Each time, when a 3x3 convolution is performed, we end up with 2 pixels lesser o
 
 <img src="https://user-images.githubusercontent.com/42609155/116170219-01746a80-a724-11eb-8666-6ff98fb8cd19.gif" width="500">
 
+In the above pictue:
+- dark purple is a kernel, convolving over light purple image
+- green is the channel extracted by the kernel
+- each square in the green is a feature
+- each square (pixel) in the light purple is a neuron and kernel is storing that information.
+
 Without Max-pooling, **99 times** 3x3 convolution needs to be performed on 199x199 to reach 1x1 image!
 
 
