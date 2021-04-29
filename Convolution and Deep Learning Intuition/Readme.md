@@ -34,7 +34,7 @@ In the above pictue:
 - dark purple is a kernel, convolving over light purple image
 - green is the channel extracted by the kernel
 - each square in the green is a feature
-- each square (pixel) in the light purple is a neuron and kernel is storing that information.
+- each square (pixel) in the light purple is a neuron and kernel is storing that information, combination of all neurons (suqares) is a channel.
 
 Without Max-pooling, **99 times** 3x3 convolution needs to be performed on 199x199 to reach 1x1 image!
 
