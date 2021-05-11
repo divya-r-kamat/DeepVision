@@ -28,9 +28,15 @@ Receptive field don't explode it increases slowing, that's the reason we add lay
 
 ### Max Pooling
 
-Max Pooling is added to reduce the number of layers. We rarely (rather never) use MaxPooling with 3x3, but rather use 2x2. 
+Max Pooling is added to reduce the number of layers and reduces the channel size which allows us to reduce overall memory in the RAM. We rarely (rather never) use MaxPooling with 3x3, but rather use 2x2. 
 
 Maxpooling adds invariance (like shift invariance, rotational invariance , scale invariance etc...), invariance basically means not dependent on the variness of the input coming in i.e even if the data changes a bit we get the same results.
+
+### Neural Network Architecture
+
+There are basically two kind of architecture used
+- Squeeze and Expand Architecture (Pyramid like architecture), where we start with block1: (32->64->128->256->512) and then squeeze again in block2 to (32->64->128->256->512) and so on.
+- Cake like Architecture, which is used by the Resnet. Its memory efficient, GPU's can handle the information and the amount of memory we need to allocate is fixed. Here,  we start with block1: (32->32->32->32) and in block2: (64->64->64->64) and so on
 
 ### Few things to note:
 * Feature is not a channel. 
