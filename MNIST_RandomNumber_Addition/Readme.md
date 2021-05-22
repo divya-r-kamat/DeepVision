@@ -1,7 +1,5 @@
 
-### Problem Statement:
-
-Write a neural network that can take 2 inputs:
+A neural network that can take 2 inputs:
 * an image from MNIST dataset and
 * a random number between 0 and 9
 
