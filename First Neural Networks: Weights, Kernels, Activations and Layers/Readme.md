@@ -43,6 +43,12 @@ If we don't use activation function
 
 - All layers of the neural network collapse into one—with linear activation functions, no matter how many layers in the neural network, the last layer will be a linear function of the first layer (because a linear combination of linear functions is still a linear function). So a linear activation function turns the neural network into just one layer.
 
+      L1 = w1x1 + w2x2
+      L2 = w3(w1x1 + w2x2) + w4 (w1x1 + w2x2)
+         = x1(w3w1 + w1w4) + x2(w3w2+w4w2)
+
+ - we dont get benefit of adding more layers and neither do we get any non linearity to learn something complex, so its just going to collapse on to itself, if we make 100 layer NN and don't add any activation its just going to collapse into one single layer. 
+
 Below are few activation functions:
 - sigmoid causes vanishing gradient problem (all gradients of the weight becomes zero)
 - tanh - also causes same vanishing gradient problem
@@ -58,6 +64,8 @@ The alternative way to get 4x4 behavior is we can combine 3x3 with another 3x3 w
 - The kernels that we use for convolution have no relation with the channels that we have in the input image, but these kernels have a relation on the number of channels that we would have in the output image
 - Most of the time we double the number of channels in every convolution (i.e 32 -> 64 -> 128 -> 256 -> 512) and mostly 2^n kind of number is followed because its much optimized and GPU's can handle this number much better.
 - The number of layers in the neural network depends on the kind of hardware that we have, we should not push the layers to learn more and always let the network learn slowly rather than overloading the memory and putting a pressure on the kernel to extract more features.
+- RelU's derivative is 0 when x is less than or equal to zero, 1 when x is positive. ReLu's derivative is not continuous at a particular point but its differentiable.
+- Anything we use with kernel size of 3x3 and with a stride of 1, the receptive field will increase by 2.
 
 
 
