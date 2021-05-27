@@ -91,7 +91,7 @@ Once we have gradients for all the weights with respect to the total error, we s
 
 ## Error Graph for different Learning rates 
 
-Link to Backpropogation Excel Sheet - 
+Link to Backpropogation Excel Sheet - https://github.com/divya-r-kamat/DeepVision/blob/main/Backpropagation/NN_BackPropogation.xlsx
 
 Below is the error graph when we change the learning rates 0.1, 0.2, 0.5, 0.8, 1.0, 2.0
 
