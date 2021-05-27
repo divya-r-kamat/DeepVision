@@ -88,3 +88,14 @@ Calculate the partial derivative of E_total with respect to w1, w2, w3 and w4 us
 
 
 Once we have gradients for all the weights with respect to the total error, we subtract this value from the current weight by multiplying with a learning rate
+
+## Error Graph for different Learning rates 
+
+Link to Backpropogation Excel Sheet - 
+
+Below is the error graph when we change the learning rates 0.1, 0.2, 0.5, 0.8, 1.0, 2.0
+
+<img src="https://user-images.githubusercontent.com/42609155/119750514-1ffe8a80-beb7-11eb-867c-967fd01bb5bb.png" width="600">
+
+We can observe that with small learning rate the loss is going to drop very slowly and takes lot of time to converge, so we should always be choosing optimal learning rate neither too low nor too high (if its too high it never converges).
+
