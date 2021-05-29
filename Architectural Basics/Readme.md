@@ -1,7 +1,6 @@
 # Architectural Basics for Neural Network
 
-Below are few architectural basics that we need to know when building a Neural Network
-Below are important concepts while designing CNN:
+Below are few architectural basics that we need to know when building a Neural Network and designing CNN:
 
 * How many layers: 
 In general we design layers at least to map the receptive field of the image. But modern networks go further deep and go beyond receptive field to capture more information about the images. 
