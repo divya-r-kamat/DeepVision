@@ -117,4 +117,40 @@ Using the MNIST image dataset and CNN, follow a step by step approach to finetun
 - However, we haven't reached 99.4 accuracy yet.
 - Observing the missclassified images its good to try out some augmentation techniques as few images seems to be slightly rotated, and also image contrast needs to be considered
 
-## Step 7 : 
+## Step 7 : Image Augmentation
+
+[Link to Notebook](https://github.com/divya-r-kamat/DeepVision/blob/main/CNN%20Optimization/MNIST_Augmentation_Step7.ipynb)
+
+### Target:
+
+- Add various Image augmentation techniques, image rotation, randomaffine, colorjitter .
+
+### Results:
+- Parameters: 6124
+- Best Training Accuracy: 97.61
+- Best Test Accuracy: 99.24%
+
+### Analysis:
+- he model is under-fitting, that should be ok as we know we have made our train data harder. 
+- However, we haven't reached 99.4 accuracy yet.
+- The model seems to be stuck at 99.2% accuracy, seems like the model needs some additional capacity towards the end.
+
+## Step 8 : LR Scheduler
+
+[Link to Notebook](https://github.com/divya-r-kamat/DeepVision/blob/main/CNN%20Optimization/MNIST_LRScheduler_Step8.ipynb)
+
+### Target:
+
+- Add some capacity towards the end after GAP layer and add LR Scheduler
+- Removed Relu and BatchNorm , drop out from the transition block
+
+### Results:
+- Parameters: 6720
+- Best Training Accuracy: 99.43
+- Best Test Accuracy: 99.53
+
+### Analysis:
+
+- The model parameters have increased
+- The model is under-fitting. This is fine, as we know we have made our train data harder.  
+- LR Scheduler and the additional capacity after GAP helped getting to the desired target 99.4, Onecyclic LR is being used, this seemed to perform better than StepLR to achieve consistent accuracy in last few layers
