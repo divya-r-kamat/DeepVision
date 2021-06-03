@@ -98,4 +98,23 @@ Using the MNIST image dataset and CNN, follow a step by step approach to finetun
 - The performance has droppped, we can further improve it. 
 - We can possibly increase the capacity of the model by adding a layer after GAP! 
 
+## Step 6 : Increase Capacity
 
+[Link to Notebook](https://github.com/divya-r-kamat/DeepVision/blob/main/CNN%20Optimization/MNIST_IncreaseCapacity_Step6.ipynb)
+
+### Target:
+
+- Increase model capacity at the end (add layer after GAP)
+
+### Results:
+- Parameters: 6,124
+- Best Training Accuracy: 99.07
+- Best Test Accuracy: 99.26
+
+### Analysis:
+- The model parameters have increased
+- There is no overfitting rather slight underfitting, thats fine dropout is doing its work , because we are adding dropout at each layer the model is able to capture the training accuracy
+- However, we haven't reached 99.4 accuracy yet.
+- Observing the missclassified images its good to try out some augmentation techniques as few images seems to be slightly rotated, and also image contrast needs to be considered
+
+## Step 7 : 
