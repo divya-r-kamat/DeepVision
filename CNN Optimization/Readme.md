@@ -156,4 +156,4 @@ Using the MNIST image dataset and CNN, follow a step by step approach to finetun
 - LR Scheduler and the additional capacity after GAP helped getting to the desired target 99.4, Onecyclic LR is being used, this seemed to perform better than StepLR to achieve consistent accuracy in last few layers
 
 
-<b>Finally, the model was able to reach 99.53% accuracy in 15 epoch with just 6720 (6K parameters)!!!
+<b>Finally, by fine tuning the model in a step by step approach, the model was able to reach 99.53% accuracy in 15 epochs with just 6720 (6K parameters)!!!
