@@ -33,8 +33,7 @@ Differentable Image Sampling is mainly used to obtain the original image pixels 
 
 ## Links to Code
 
-Github Link - https://github.com/gkdivya/EVA/blob/main/12_TheDawnOfTransformers/SpacialTransformers/SpacialTransformers_CIFAR10.ipynb <br>
-Colab Link - https://colab.research.google.com/github/gkdivya/EVA/blob/main/12_TheDawnOfTransformers/SpacialTransformers/SpacialTransformers_CIFAR10.ipynb
+Github Link - https://github.com/divya-r-kamat/DeepVision/blob/main/Transformers/SpatialTransformers/SpatialTransformers_CIFAR10.ipynb <br>
 
 ## Model Architecture
 
