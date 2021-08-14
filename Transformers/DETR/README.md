@@ -117,7 +117,7 @@ The directory structure would be as following:
 
 ## Training
 
-Model was trained for 150 epochs and the link to the notebook can be found [here](https://github.com/gkdivya/EVA/blob/main/14_DETR/FineTuning_DETR(DEtection_TRansformer).ipynb)
+Model was trained for 150 epochs and the link to the notebook can be found [here](https://github.com/divya-r-kamat/DeepVision/blob/main/Transformers/DETR/FineTuning_DETR(DEtection_TRansformer).ipynb)
 
 ## Metrics
 
